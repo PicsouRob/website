@@ -29,13 +29,13 @@ function Home() {
                             <hr class="h-1 w-20 bg-gray-400 border-0" />
                         </div>
                         <h1 class="text-white text-4xl md:text-6xl font-medium mb-4 leading-normal">I'm Phanord Roberto, A Full Stack Web Developer</h1>
-                        <span class="py-4 mt-4 text-gray-300 font-medium leading-relaxed">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
+                        <span class="pt-2 max-w-lg text-xl tracking-wide leading-relaxed text-gray-300">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                     </div>
                     {/* <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-10 py-2 md:py-4 hover:bg-[#880a0c] rounded-lg my-8" onClick={() => openMail()}
                     >
                         Here Me
                     </button> */}
-                    <button class="px-3 md:px-8 my-4 py-4 font-semibold tracking-wide bg-teal-200 rounded-lg shadow-md transition hover:bg-teal-300"
+                    <button class="px-3 md:px-8 my-4 text-white py-4 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:bg-teal-300 hover:text-black hover:font-semibold"
                         onClick={() => openMail()}
                     >
                         Here Me

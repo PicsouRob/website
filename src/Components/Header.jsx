@@ -40,14 +40,14 @@ function Header() {
                     <img src={logo} alt="logo" class="w-32 h-6" />
                 </Link>
                 <div class="hidden md:items-center md:tracking-wide md:text-gray-300 md:gap-8 lg:gap-x-16 md:flex">
-                    <Link to="home"
-                        activeClass="active"
+                    <Link activeClass="active"
+                        to="home"
                         spy={true}
                         smooth={true}
+                        class="cursor-pointer hover:text-gray-200"
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
-                        class="cursor-pointer hover:text-gray-200"
                     >Home</Link>
                     <Link activeClass="active"
                         to="about"
@@ -68,10 +68,7 @@ function Header() {
                         activeClassName="selected"
                     >Services</Link>
                 </div>
-                {/* <button class="hidden md:flex cursor-pointer hover:opacity-80 border-1 border border-[#880a0c] px-8 py-2 hover:bg-[#880a0c] rounded-full">
-                    
-                </button> */}
-                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 border-gray-800 transition md:inline-block hover:bg-teal-300 hover:text-gray-900 hover:shadow-lg">
+                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 hover:border-[#880a0c] border-gray-800 transition md:inline-block hover:bg-[#880a0c] hover:shadow-lg">
                     <Link $isContact
                         to="contact"
                         spy={true}
