@@ -3,6 +3,7 @@ import React from 'react';
 import SocialMedia from '../../Components/SocialMedia';
 import Header from '../../Components/Header';
 import img from '../../Images/picsou.jpg';
+import pic from '../../Images/picsou.png';
 // import design from '../../Images/Mediamodifier-Design.svg';
 // import img2 from '../../Images/image.svg';
 // import circle from '../../Images/circle-scatter-haikei.svg';
@@ -44,8 +45,8 @@ function Home() {
                         <SocialMedia color="#fff" />
                     </div>
                 </div>
-                <div class="hidden lg:relative lg:w-1/2 lg:flex lg:z-10 lg:h-auto py-10">
-                    <img alt="" src={img} class="rounded-full bg-contain" />
+                <div class="hidden lg:relative lg:w-1/2 lg:flex lg:z-10 lg:items-center lg:justify-center">
+                    <img alt="" src={pic} class="drop-shadow-2xl" />
                 </div>
                     {/* <img alt="" src={design} class="position top-0 right-9 h-40 w-40" /> */}
             </div>
