@@ -15,7 +15,7 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative py-6 px-8 mx-auto max-w-7xl z-20">
+        <div id="home" class="relative px-8 mx-auto max-w-7xl z-20">
             <Header />
             {/* <img alt="" src={circle} class="absolute top-0 right-0" /> */}
             <div class="flex flex-col lg:flex-row items-center gap-10">
@@ -25,13 +25,13 @@ function Home() {
                     </div>
                     <div class="">
                         <h1 class="text-white text-5xl lg:text-6xl tracking-wide font-medium">Hello, world</h1>
-                        <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-normal">I'm Phanord Roberto</h1>
-                        <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-normal">
-                            UI|UX Designer and Full Stack Developer Web
-                        </h1>
+                        <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, UI|UX Designer and Full Stack Developer</h1>
+                        {/* <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-normal">
+                            UI|UX Designer and Full Stack Developer
+                        </h1> */}
                         <span class="py-4 mt-4 text-gray-300 font-medium leading-relaxed">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                     </div>
-                    <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-8 py-3 hover:bg-[#880a0c] rounded-full my-8" onClick={() => openMail()}
+                    <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-8 py-2 hover:bg-[#880a0c] rounded-full my-8" onClick={() => openMail()}
                     >
                         Here Me
                     </button>
