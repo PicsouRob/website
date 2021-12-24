@@ -17,7 +17,7 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative px-8 lg:px-16 mx-auto max-w-7xl">
+        <div id="home" class="relative px-8 mx-auto max-w-7xl">
             <Header />
             <div class="relative py-16 mx-auto w-full">
                 <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
