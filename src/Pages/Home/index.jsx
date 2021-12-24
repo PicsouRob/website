@@ -30,7 +30,7 @@ function Home() {
                                 <h1 class="text-gray-400 text-3xl lg:text-4xl leading-normal tracking-wide font-medium pb-2">Hello, world</h1>
                                 <hr class="h-1 w-20 bg-gray-400 border-0" />
                             </div>
-                            <h1 class="text-white text-4xl md:text-6xl font-medium mb-4 leading-normal">I'm Phanord Roberto, A Full Stack Web Developer</h1>
+                            <h1 class="text-white text-4xl md:text-6xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, A Full Stack Web Developer</h1>
                             <span class="pt-2 max-w-lg text-xl tracking-wide leading-relaxed text-gray-300">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                         </div>
                         {/* <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-10 py-2 md:py-4 hover:bg-[#880a0c] rounded-lg my-8" onClick={() => openMail()}
