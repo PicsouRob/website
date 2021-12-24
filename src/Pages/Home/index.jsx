@@ -19,7 +19,7 @@ function Home() {
         <div id="home" class="relative px-8 mx-auto max-w-7xl z-20 min-h-screen">
             <Header />
             {/* <img alt="" src={circle} class="absolute top-0 right-0" /> */}
-            <div class="flex items-center">
+            <div class="relative py-10 px-8 mx-auto max-w-7xl">
                 <div class="flex flex-col lg:flex-row items-center gap-10">
                     <div class="w-full lg:w-1/2">
                         <div class="flex md:items-center md:gap-8 lg:gap-x-16 md:hidden py-10">
