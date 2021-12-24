@@ -27,7 +27,7 @@ function App() {
                       size={4} duration={1}></Page>
                 </div>
             ) : (
-                <div class="relative flex flex-col items-center justify-center bg-slate-900 max-w-7xl h-auto">
+                <div class="relative flex flex-col bg-slate-900 max-w-7xl h-auto mx-auto">
                     <img class="absolute opacity-70" alt="top-svg" src={bg1} />
                     {/* <Header /> */}
                     <Home />
