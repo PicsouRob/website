@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
@@ -11,12 +11,12 @@ function Header() {
     const [isShow, setIsShow] = useState(false);
     // const { width } =  useWidth();
 
-    const checkScrollTop = () => {    
-        if (!showScroll && window.pageYOffset > 400){
-            setShowScroll(true);  
-        } else if (showScroll && window.pageYOffset <= 400){
+    const checkScrollTop = () => {
+        if (!showScroll && window.pageYOffset > 400) {
+            setShowScroll(true);
+        } else if (showScroll && window.pageYOffset <= 400) {
             setShowScroll(false);
-        }  
+        }
     };
 
     const toggleIcon = () => {
@@ -27,7 +27,7 @@ function Header() {
 
     return (
         <div class="py-6 max-w-7xl">
-            <div class="flex items-center justify-between text-teal-200">
+            <div class="flex items-center justify-between">
                 <Link $isFullLink
                     activeClass="active"
                     to="home"
@@ -39,7 +39,7 @@ function Header() {
                 >
                     <img src={logo} alt="logo" class="w-32 h-6" />
                 </Link>
-                <div class="hidden md:flex md:items-center md:tracking-wide md:text-[001344] lg:gap-x-16">
+                <div class="hidden md:items-center md:tracking-wide md:text-gray-300 md:gap-8 lg:gap-x-16 md:flex">
                     <Link to="home"
                         activeClass="active"
                         spy={true}
@@ -47,13 +47,13 @@ function Header() {
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
-                        class="cursor-pointer hover:text-gray-300"
+                        class="cursor-pointer hover:text-gray-200"
                     >Home</Link>
                     <Link activeClass="active"
                         to="about"
                         spy={true}
                         smooth={true}
-                        class="cursor-pointer hover:text-gray-300"
+                        class="cursor-pointer hover:text-gray-200"
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
@@ -61,14 +61,17 @@ function Header() {
                     <Link activeClass="active"
                         to="services"
                         spy={true}
-                        class="cursor-pointer hover:text-gray-300"
+                        class="cursor-pointer hover:text-gray-200"
                         smooth={true}
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
                     >Services</Link>
                 </div>
-                <button class="hidden md:flex cursor-pointer hover:opacity-80 border-1 border border-[#880a0c] px-8 py-2 hover:bg-[#880a0c] rounded-full">
+                {/* <button class="hidden md:flex cursor-pointer hover:opacity-80 border-1 border border-[#880a0c] px-8 py-2 hover:bg-[#880a0c] rounded-full">
+                    
+                </button> */}
+                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 border-gray-800 transition md:inline-block hover:bg-teal-300 hover:text-gray-900 hover:shadow-lg">
                     <Link $isContact
                         to="contact"
                         spy={true}
@@ -79,11 +82,11 @@ function Header() {
                 </button>
                 <div class="flex md:hidden" onClick={() => toggleIcon()}>
                     {!isShow ? (
-                        <FaBars color="#001344" 
+                        <FaBars color="#001344"
                             size={20} style={{ cursor: "pointer" }}
                         />
                     ) : (
-                        <FaTimes color="#001344" 
+                        <FaTimes color="#001344"
                             size={20} style={{ cursor: "pointer" }}
                         />
                     )}
@@ -99,7 +102,7 @@ function Header() {
                     duration={500}
                     onClick={() => toggleIcon()}
                 >Home</Link>
-                <Link 
+                <Link
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -108,7 +111,7 @@ function Header() {
                     duration={500}
                     onClick={() => toggleIcon()}
                 >About Me</Link>
-                <Link 
+                <Link
                     activeClass="active"
                     to="services"
                     spy={true}
@@ -117,7 +120,7 @@ function Header() {
                     duration={500}
                     onClick={() => toggleIcon()}
                 >Services</Link>
-                <Link 
+                <Link
                     activeClass="active"
                     to="contact"
                     spy={true}

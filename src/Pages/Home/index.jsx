@@ -24,14 +24,19 @@ function Home() {
                         <img alt="" src={img} class="rounded-lg" />
                     </div>
                     <div class="">
-                        <h1 class="text-gray-400 text-5xl lg:text-6xl tracking-wide font-medium pb-2">Hello, world</h1>
-                        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, A Full Stack Web Developer</h1>
-                        {/* <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-normal">
-                            UI|UX Designer and Full Stack Developer
-                        </h1> */}
+                        <div class="flex gap-x-4 items-center">
+                            <h1 class="text-gray-400 text-3xl lg:text-4xl leading-normal tracking-wide font-medium pb-2">Hello, world</h1>
+                            <hr class="h-1 w-20 bg-gray-400 border-0" />
+                        </div>
+                        <h1 class="text-white text-4xl md:text-6xl font-medium mb-4 leading-normal">I'm Phanord Roberto, A Full Stack Web Developer</h1>
                         <span class="py-4 mt-4 text-gray-300 font-medium leading-relaxed">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                     </div>
-                    <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-8 py-2 hover:bg-[#880a0c] rounded-full my-8" onClick={() => openMail()}
+                    {/* <button class="cursor-pointer text-white hover:opacity-80 border-1 bg-[#880a0c] px-10 py-2 md:py-4 hover:bg-[#880a0c] rounded-lg my-8" onClick={() => openMail()}
+                    >
+                        Here Me
+                    </button> */}
+                    <button class="px-3 md:px-8 my-4 py-4 font-semibold tracking-wide bg-teal-200 rounded-lg shadow-md transition hover:bg-teal-300"
+                        onClick={() => openMail()}
                     >
                         Here Me
                     </button>
