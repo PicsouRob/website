@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Page from 'react-page-loading';
 
-// import Header from './Components/Header';
 import Home from './Pages/Home';
 import bg1 from './Images/bg-1.svg';
 import About from "./Pages/About";
-// import Service from "./Pages/Services/Index";
-// import Contact from './Pages/Contact';
-// import ScrollToTop from "./Components/ScrollToTop";
-// import Footer from './Components/Footer';
+import Service from "./Pages/Services/Index";
+import Contact from './Pages/Contact';
+import ScrollToTop from "./Components/ScrollToTop";
+import Footer from './Components/Footer';
 
 function App() {
     const [isLoad, setIsLoad] = useState(true);
@@ -27,15 +26,14 @@ function App() {
                       size={4} duration={1}></Page>
                 </div>
             ) : (
-                <div class="bg-[#080225]">
+                <div class="relative bg-[#080225]">
                     <img class="absolute opacity-50" alt="top-svg" src={bg1} />
-                    {/* <Header /> */}
                     <Home />
                     <About />
-                    {/* <Service /> */}
-                    {/* <Contact /> */}
-                    {/* <ScrollToTop /> */}
-                    {/* <Footer />  */}
+                    <Service />
+                    <Contact />
+                    <Footer /> 
+                    <ScrollToTop />
                 </div>
             )}
         </div>

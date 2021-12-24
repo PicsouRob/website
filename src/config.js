@@ -1,7 +1,3 @@
-import dotEnv from 'dotenv';
-
-dotEnv.config();
-
 const config = {
     USER_ID: "user_qZZiOao2cQFTt8wclnGaQ",
     TEMPLATES_ID: "template_gwvrxap",

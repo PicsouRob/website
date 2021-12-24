@@ -1,47 +1,26 @@
 import React from 'react';
-import crossApp from '../../Images/app.svg';
-import design from '../../Images/design.svg';
-import website from '../../Images/website.svg';
-import { useWidth, HeaderDescription } from '../../Styles/GlobalStyleWrapper';
-import { ServicesWrapper, ServicesContent, TextStyle, Image, Text,
-    ServicesContainer } from './ServiceStyle';
+
+import { data } from '../../Utils/data';
+import HeaderText from '../../Components/HeaderText';
 
 function Service() {
-    const { width } =  useWidth();
-
-    const data = [
-        {
-            name: "Website Application",
-            image: website,
-            text: "I am a web developer & programmer, i build web application usually with Reactjs"
-        },
-        {
-            name: "Cross-Platform App",
-            image: crossApp,
-            text: "You have a business, a restaurant or any type of buisiness which you will need an application for your users, do not hesitate to contact me."
-        },
-        {
-            name: "Design UI|UX",
-            image: design,
-            text: "I love building simple user interfaces that are beautiful to look at, Hire me for your design of your product."
-        },
-    ];
-
     return (
-        <ServicesWrapper id="services" width={width}>
-            <HeaderDescription header="My Awasome" width={width}
-                bottom="Services" color="#001344"
-            ></HeaderDescription>
-            <ServicesContainer width={width}>
+        <div id="services" class="relative mx-auto px-8 max-w-7xl py-16 my-12">
+            <div class="mb-24">
+                <HeaderText text="Services" title="My Awasome" color="#fff" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-32 mt-10">
                 {data.map((items, index) => (
-                    <ServicesContent key={index}>
-                        <Image alt={items.name} src={items.image} />
-                        <Text>{items.name}</Text>
-                        <TextStyle>{items.text}</TextStyle>
-                    </ServicesContent>
+                    <div key={index} class="py-8 px-6 rounded-lg bg-white h-50 flex flex-col items-center gap-y-4 shadow-lg transition duration-300 ease-out hover:translate-y-4">
+                        <img alt={items.name} src={items.image}
+                            class="w-24 h-24 drop-shadow-lg"
+                        />
+                        <h3 class="font-medium text-xl">{items.name}</h3>
+                        <span class="leading-normal text-center tracking-wide">{items.text}</span>
+                    </div>
                 ))}
-            </ServicesContainer>
-        </ServicesWrapper>
+            </div>
+        </div>
     )
 }
 

@@ -1,27 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from "react-scroll";
 import { FaArrowCircleUp } from 'react-icons/fa';
 
-const ScrollToTopView = styled.div`
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    cursor: pointer;
-`;
-
-const Icon = styled(FaArrowCircleUp)`
-    background: #fff;
-    color: #880a0c;
-    border-radius: 50px;
-    border: none;
-    width: 30px;
-    height: 30px;
-`;
-
 function ScrollToTop() {
     return (
-        <ScrollToTopView>
+        <div class="absolute flex shadow-lg bottom-8 cursor-pointer right-6 bg-white w-8 h-8 rounded-full items-center justify-center">
             <Link
                 to="home"
                 activeClass="active"
@@ -31,11 +14,10 @@ function ScrollToTop() {
                 duration={500}
                 activeClassName="selected"
             >
-                <Icon size={30}></Icon>
+                <FaArrowCircleUp class="" size={30} />
             </Link>
-        </ScrollToTopView>
+        </div>
     )
 }
 
 export default ScrollToTop;
-
