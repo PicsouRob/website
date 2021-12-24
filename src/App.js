@@ -20,7 +20,7 @@ function App() {
     return (
         <div class="relative bg-slate-900">
             {isLoad ? (
-                <div>
+                <div class="flex justify-center items-center">
                     <Page loader={"bubble"} color={"#001344"} 
                       size={4} duration={1}></Page>
                 </div>
