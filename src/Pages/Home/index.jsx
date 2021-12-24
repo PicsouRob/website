@@ -25,7 +25,7 @@ function Home() {
                     </div>
                     <div class="">
                         <h1 class="text-white text-5xl lg:text-6xl tracking-wide font-medium">Hello, world</h1>
-                        <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, UI|UX Designer and Full Stack Developer</h1>
+                        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, UI|UX Designer and Full Stack Developer</h1>
                         {/* <h1 class="text-white text-5xl lg:text-6xl font-medium mb-4 leading-normal">
                             UI|UX Designer and Full Stack Developer
                         </h1> */}
