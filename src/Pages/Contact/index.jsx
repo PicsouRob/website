@@ -64,7 +64,7 @@ function Contact() {
 
     return (
         <div id="contact" class="relative mx-auto bg-white min-h-screen w-full">
-            <div class="max-w-7xl py-16 px-8">
+            <div class="max-w-7xl py-16 px-8 mx-auto">
                 <HeaderText text="Contact Me" title="Inquiry" color="#080225" />
                 <div class="flex flex-col lg:flex-row gap-x-16 py-4 gap-y-4">
                     <div class="w-full lg:w-1/2 mt-6">
