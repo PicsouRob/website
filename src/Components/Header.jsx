@@ -68,7 +68,7 @@ function Header() {
                         activeClassName="selected"
                     >Services</Link>
                 </div>
-                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 hover:border-[#880a0c] border-gray-800 transition md:inline-block hover:bg-[#880a0c] hover:shadow-lg">
+                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 hover:border-0 border-gray-800 transition md:inline-block hover:bg-[#880a0c] hover:shadow-lg">
                     <Link $isContact
                         to="contact"
                         spy={true}
