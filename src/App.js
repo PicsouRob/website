@@ -6,7 +6,6 @@ import bg1 from './Images/bg-1.svg';
 import About from "./Pages/About";
 import Service from "./Pages/Services/Index";
 import Contact from './Pages/Contact';
-import ScrollToTop from "./Components/ScrollToTop";
 import Footer from './Components/Footer';
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
                     <Service />
                     <Contact />
                     <Footer /> 
-                    <ScrollToTop />
                 </div>
             )}
         </div>

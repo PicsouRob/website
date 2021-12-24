@@ -78,9 +78,9 @@ function Contact() {
                             <div class="w-9 h-9 md:w-12 md:h-12 rounded-full bg-[#880a0c] flex items-center justify-center">
                                 <FaEnvelope color="#fff" />
                             </div>
-                            <div class="">
+                            <div class="break-all">
                                 <h4 class="font-bold">Address Mail</h4>
-                                <p class="font-medium break-words">www.phanordpicsouroberto11@gmail.com</p>
+                                <p class="font-medium break-all flex-wrap">www.phanordpicsouroberto11@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex gap-x-4 items-center cursor-pointer my-6" onClick={() => window.open('tel:+18094298594')}>
