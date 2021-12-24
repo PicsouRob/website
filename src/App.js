@@ -27,8 +27,8 @@ function App() {
                       size={4} duration={1}></Page>
                 </div>
             ) : (
-                <div class="bg-slate-900">
-                    <img class="absolute opacity-70" alt="top-svg" src={bg1} />
+                <div class="bg-[#080225]">
+                    <img class="absolute opacity-50" alt="top-svg" src={bg1} />
                     {/* <Header /> */}
                     <Home />
                     <About />

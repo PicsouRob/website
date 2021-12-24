@@ -5,7 +5,7 @@ function About() {
     const animeArray = [1, 2, 3, 4, 5, 6, 77, 22, 11, 12, 31, 9, 43, 99, 29, 32, 70, 40];
 
     return (
-        <div id="about" class="relative py-16 px-8 mx-auto max-w-7xl z-20">
+        <div id="about" class="relative px-8 lg:px-16 py-16 mx-auto max-w-7xl z-20">
             <div class="flex flex-col lg:flex-row gap-16 items-center mx-auto">
                 <div class="relative w-full lg:w-1/2">
                     <div class="absolute -top-2 left-0 -z-10 w-52 h-52 rounded-lg bg-[#880a0c]"></div>

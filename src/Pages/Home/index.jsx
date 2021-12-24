@@ -17,14 +17,11 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative px-8 mx-auto max-w-7xl">
+        <div id="home" class="relative px-8 lg:px-16 mx-auto max-w-7xl">
             <Header />
             <div class="relative py-16 mx-auto w-full">
-                <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
                     <div class="w-full lg:w-1/2">
-                        <div class="flex md:items-center md:gap-8 lg:gap-x-16 md:hidden py-10">
-                            <img alt="" src={img} class="rounded-lg" />
-                        </div>
                         <div class="">
                             <div class="flex gap-x-4 items-center">
                                 <h1 class="text-gray-400 text-3xl lg:text-4xl leading-normal tracking-wide font-medium pb-2">Hello, world</h1>
@@ -42,8 +39,8 @@ function Home() {
                             <SocialMedia color="#fff" />
                         </div>
                     </div>
-                    <div class="hidden lg:relative lg:w-1/2 lg:flex lg:z-10 lg:items-center lg:justify-center">
-                        <div class="absolute top- right-0 flex gap-x-4 p-3 rounded-lg bg-white z-20 items-center w-64">
+                    <div class=" relative w-full lg:w-1/2 flex z-30 items-center justify-center">
+                        <div class="absolute top- right-0 flex gap-x-4 p-3 rounded-lg bg-white z-10 lg:z-20 items-center w-64 shadow-lg">
                             <img alt="" src={img} 
                                 class="w-12 h-12 rounded-full"
                             />
@@ -52,7 +49,7 @@ function Home() {
                                 <p class="font-medium text-gray-900">Full-Stack Developer</p>
                             </div>
                         </div>
-                        <div class="absolute top-0 left-0 flex gap-x-4 px-5 py-2 rounded-lg bg-white z-20 items-center w-64">
+                        <div class="absolute top-0 left-0 flex gap-x-4 px-5 py-2 rounded-lg bg-white z-10 items-center w-64 shadow-lg">
                             <img alt="" src={img} 
                                 class="w-12 h-12 rounded-full"
                             />
@@ -61,7 +58,7 @@ function Home() {
                                 <p class="font-medium text-gray-900">Programmer</p>
                             </div>
                         </div>
-                        <div class="absolute bottom-0 left-0 flex gap-x-4 p-4 rounded-lg bg-white z-20 items-center w-64">
+                        <div class="absolute bottom-0 left-0 flex gap-x-4 p-4 rounded-lg bg-white z-40 items-center w-64 shadow-lg">
                             <img alt="" src={img} 
                                 class="w-12 h-12 rounded-full"
                             />

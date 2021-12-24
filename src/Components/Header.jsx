@@ -35,16 +35,15 @@ function Header() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    class="cursor-pointer"
                 >
-                    <img src={logo} alt="logo" class="w-32 h-6" />
+                    <img src={logo} alt="logo" class="w-32 h-6 cursor-pointer" />
                 </Link>
                 <div class="hidden md:items-center md:tracking-wide md:text-gray-300 md:gap-8 lg:gap-x-16 md:flex">
                     <Link activeClass="active"
                         to="home"
                         spy={true}
-                        smooth={true}
                         class="cursor-pointer hover:text-gray-200"
+                        smooth={true}
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
@@ -52,8 +51,8 @@ function Header() {
                     <Link activeClass="active"
                         to="about"
                         spy={true}
-                        smooth={true}
                         class="cursor-pointer hover:text-gray-200"
+                        smooth={true}
                         offset={-70}
                         duration={500}
                         activeClassName="selected"
@@ -68,7 +67,7 @@ function Header() {
                         activeClassName="selected"
                     >Services</Link>
                 </div>
-                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 hover:border-0 border-gray-800 transition md:inline-block hover:bg-[#880a0c] hover:shadow-lg">
+                <button class="hidden py-3 px-8 font-medium tracking-wide leading-5 text-white rounded-md border-2 hover:border-[#880a0c] border-gray-800 transition md:inline-block hover:bg-[#880a0c] hover:shadow-lg">
                     <Link $isContact
                         to="contact"
                         spy={true}
@@ -79,11 +78,11 @@ function Header() {
                 </button>
                 <div class="flex md:hidden" onClick={() => toggleIcon()}>
                     {!isShow ? (
-                        <FaBars color="#001344"
+                        <FaBars color="#fff"
                             size={20} style={{ cursor: "pointer" }}
                         />
                     ) : (
-                        <FaTimes color="#001344"
+                        <FaTimes color="#fff"
                             size={20} style={{ cursor: "pointer" }}
                         />
                     )}
