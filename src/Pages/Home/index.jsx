@@ -16,10 +16,10 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative px-8 py-6 mx-auto max-w-7xl z-20">
+        <div id="home" class="relative px-8 py-6 mx-auto max-w-7xl">
             <Header />
             {/* <img alt="" src={circle} class="absolute top-0 right-0" /> */}
-            <div class="relative py-10 px-8 mx-auto max-w-7xl">
+            <div class="relative py-10 px-8 mx-auto w-full">
                 <div class="flex flex-col lg:flex-row items-center gap-10">
                     <div class="w-full lg:w-1/2">
                         <div class="flex md:items-center md:gap-8 lg:gap-x-16 md:hidden py-10">
