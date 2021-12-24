@@ -67,8 +67,8 @@ function Contact() {
             <div class="max-w-7xl py-16 px-8 mx-auto">
                 <HeaderText text="Contact Me" title="Inquiry" color="#080225" />
                 <div class="flex flex-col lg:flex-row gap-x-16 py-4 gap-y-4">
-                    <div class="w-full lg:w-1/2 mt-6">
-                        <div class="py-4">
+                    <div class="w-full lg:w-1/2 mt-4">
+                        <div class="py-3">
                             <h2 class="relative z-10 text-3xl font-bold leading-tight md:text-4xl break-words mb-2">Send me a message</h2>
                             <span class="relative pt-2 text-xl tracking-wide">If you have any other questions or queries, please do not hesitate to contact me. </span>
                         </div>
@@ -80,7 +80,7 @@ function Contact() {
                             </div>
                             <div class="">
                                 <h4 class="font-bold">Address Mail</h4>
-                                <p class="font-medium">www.phanordpicsouroberto11@gmail.com</p>
+                                <p class="font-medium break-words">www.phanordpicsouroberto11@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex gap-x-4 items-center cursor-pointer my-6" onClick={() => window.open('tel:+18094298594')}>
