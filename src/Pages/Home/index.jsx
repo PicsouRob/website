@@ -16,7 +16,7 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative px-8 mx-auto max-w-7xl z-20 min-h-screen">
+        <div id="home" class="relative px-8 py-6 mx-auto max-w-7xl z-20">
             <Header />
             {/* <img alt="" src={circle} class="absolute top-0 right-0" /> */}
             <div class="relative py-10 px-8 mx-auto max-w-7xl">
