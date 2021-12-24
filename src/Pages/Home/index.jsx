@@ -15,7 +15,7 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative min-h-screen items-center justify-center px-8 mx-auto max-w-7xl">
+        <div id="home" class="relative py-6 px-8 mx-auto max-w-7xl z-20">
             <Header />
             {/* <img alt="" src={circle} class="absolute top-0 right-0" /> */}
             <div class="flex flex-col lg:flex-row items-center gap-10">
