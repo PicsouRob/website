@@ -5,11 +5,11 @@ function About() {
     const animeArray = [1, 2, 3, 4, 5, 6, 77, 22, 11, 12, 31, 9, 43, 99, 29, 32, 70, 40];
 
     return (
-        <div id="about" class="relative py-6 px-8 mx-auto max-w-7xl z-20">
+        <div id="about" class="relative py-16 px-8 mx-auto max-w-7xl z-20">
             <div class="flex flex-col lg:flex-row gap-16 items-center mx-auto">
                 <div class="relative w-full lg:w-1/2">
-                    <div class="absolute -top-6 left-0 -z-10 w-52 h-52 rounded-lg bg-[#880a0c]"></div>
-                    <img class="rounded-lg z-20 translate-y-4" src={aboutPhoto} alt='about' />
+                    <div class="absolute -top-2 left-0 -z-10 w-52 h-52 rounded-lg bg-[#880a0c]"></div>
+                    <img class="rounded-lg z-20 translate-x-3" src={aboutPhoto} alt='about' />
                 </div>
                 <div class="w-full lg:w-1/2">
                     <div class="">
