@@ -88,47 +88,52 @@ function Header() {
                     )}
                 </div>
             </div>
-            <div class="hidden">
-                <Link
-                    activeClass="active"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => toggleIcon()}
-                >Home</Link>
-                <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => toggleIcon()}
-                >About Me</Link>
-                <Link
-                    activeClass="active"
-                    to="services"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => toggleIcon()}
-                >Services</Link>
-                <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => toggleIcon()}
-                >Contact</Link>
-                <div>
-                    {/* <SocialMedia color="#001344" /> */}
+            {isShow && (
+                <div class="absolute right-0 min-h-screen bg-white shadow-lg py-8 z-40 mt-4 w-3/5 transition ease-out duration-300">
+                    <div class="grid grid-cols-1 divide-y gap-y-5 divider-y items-center text-center text-xl font-medium w-full">
+                        <Link
+                            activeClass="active"
+                            class=""
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={() => toggleIcon()}
+                        >Home</Link>
+                        <Link
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={() => toggleIcon()}
+                        >About Me</Link>
+                        <Link
+                            activeClass="active"
+                            to="services"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={() => toggleIcon()}
+                        >Services</Link>
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={() => toggleIcon()}
+                        >Contact</Link>
+                    </div>
+                    <div>
+                        {/* <SocialMedia color="#001344" /> */}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     )
 }

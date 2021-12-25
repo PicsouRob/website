@@ -18,9 +18,9 @@ function App() {
     }, []);
 
     return (
-        <div class="relative bg-slate-900">
+        <div class="relative">
             {isLoad ? (
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center min-h-screen">
                     <Page loader={"bubble"} color={"#001344"} 
                       size={4} duration={1}></Page>
                 </div>
