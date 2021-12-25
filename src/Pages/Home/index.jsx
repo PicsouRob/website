@@ -17,7 +17,7 @@ function Home() {
     }
 
     return (
-        <div id="home" class="relative px-8 mx-auto max-w-7xl">
+        <div id="home" class="relative min-h-screen px-8 mx-auto max-w-7xl">
             <Header />
             <div class="relative py-16 mx-auto w-full">
                 <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
@@ -30,7 +30,7 @@ function Home() {
                             <h1 class="text-white text-4xl md:text-6xl font-medium mb-4 leading-relaxed">I'm Phanord Roberto, A Full Stack Web Developer</h1>
                             <span class="pt-2 max-w-lg text-xl tracking-wide leading-relaxed text-gray-300">I am a web developer & programmer living in Santo-Domingo, Dominican Republic. I make web and Cross-platform applications , usually with Reactjs and React native.</span>
                         </div>
-                        <button class="px-3 md:px-8 my-4 text-white py-4 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:bg-teal-300 hover:text-black hover:font-semibold"
+                        <button class="px-8 my-4 text-white py-4 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:bg-teal-300 hover:text-black hover:font-semibold"
                             onClick={() => openMail()}
                         >
                             Here Me

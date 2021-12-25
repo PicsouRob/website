@@ -1,24 +1,46 @@
 import React from 'react';
 
 import { data } from '../../Utils/data';
-import HeaderText from '../../Components/HeaderText';
 
 function Service() {
     return (
-        <div id="services" class="relative mx-auto px-8 max-w-7xl py-16 my-12">
-            <div class="mb-24">
-                <HeaderText text="Services" title="My Awasome" color="#fff" />
+        <div id="services" class="relative mx-auto px-8 max-w-7xl py-16 bg-green-100">
+            <div class="mb-16 flex flex-col items-center justify-center">
+                <h3 class="text-[#880a0c] text-xl font-medium">
+                    Services
+                </h3>
+                <h1 class="relative z-10 text-4xl font-bold leading-tight md:text-5xl break-words text-center">
+                    My Awasome Services
+                </h1>
+                <p class="pt-2 max-w-lg font-medium tracking-wide leading-relaxed text-center">
+                    You may be interested in what i cn offer you. More services you can find below.I do everything at a high level.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-32 mt-10">
-                {data.map((items, index) => (
-                    <div key={index} class="py-8 px-6 rounded-lg bg-white h-50 flex flex-col items-center gap-y-4 shadow-lg transition duration-300 ease-out hover:translate-y-4">
-                        <img alt={items.name} src={items.image}
-                            class="w-24 h-24 drop-shadow-lg"
-                        />
-                        <h3 class="font-medium text-xl">{items.name}</h3>
-                        <span class="leading-normal text-center tracking-wide">{items.text}</span>
-                    </div>
-                ))}
+            <div class="flex flex-col lg:flex-row gap-y-10 gap-x-24 mt-10">
+                <div class="grid grid-cols-1 gap-y-6 w-full lg:w-1/2">
+                    {data.map((items, index) => (
+                        <div key={index} class="py-4 px-6 rounded-lg bg-white flex items-center gap-y-4 gap-x-6 shadow-lg transition duration-300 ease-out hover:translate-y-2 h-auto w-full ">
+                            <img alt={items.name} src={items.image}
+                                class="w-20 h-20 drop-shadow-lg"
+                            />
+                            <div class="flex flex-col gap-y-2">
+                                <h3 class="font-medium text-xl md:text-2xl">{items.name}</h3>
+                                <span class="leading-normal tracking-wide">{items.text}</span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div class=" w-full lg:w-1/2">
+                    <h1 class="relative z-10 text-4xl font-bold leading-tight md:text-5xl">
+                        How can i help you?
+                    </h1>
+                    <p class="py-4 max-w-lg font-medium tracking-wide leading-loose">
+                        I will you with fingind a solution and solved you problems, I use process design to create digital products.Besids that also their Business. <br /> <br /> So if you need a website or a application for your business, don't hesitate to contact me. 
+                    </p>
+                    <button class="px-8 mt-3 md:px-8 py-4 font-semibold tracking-wide bg-[#880a0c] text-white rounded-lg shadow-md transition hover:opacity-90">
+                        Here Me
+                    </button>
+                </div>
             </div>
         </div>
     )
