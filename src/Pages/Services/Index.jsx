@@ -4,8 +4,8 @@ import { data, openMail } from '../../Utils/data';
 
 function Service() {
     return (
-        <div id="services" class="relative mx-auto bg-green-100">
-            <div class="px-8 max-w-7xl py-16">
+        <div id="services" class="relative bg-green-100">
+            <div class="px-8 max-w-7xl py-16 mx-auto">
                 <div class="mb-16 flex flex-col items-center justify-center">
                     <h3 class="text-[#880a0c] text-xl font-bold">
                         Services
