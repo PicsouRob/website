@@ -19,3 +19,7 @@ export const data = [
         text: "Hire me for your design of your product."
     },
 ];
+
+export const openMail = () => {
+    window.open('mailto:www.phanordpicsouroberto11@gmail.com?subject=Services&body=Salut Roberto');
+}

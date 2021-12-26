@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import config from '../../config';
 import SocialMedia from '../../Components/SocialMedia';
 import HeaderText from '../../Components/HeaderText';
+import spin from '../../Images/spin.svg';
 
 function Contact() {
     emailjs.init(config.USER_ID);
@@ -70,7 +71,7 @@ function Contact() {
                     <div class="w-full lg:w-1/2 mt-4">
                         <div class="py-3">
                             <h2 class="relative z-10 text-3xl font-bold leading-tight md:text-4xl break-words mb-2">Send me a message</h2>
-                            <span class="relative pt-2 text-xl tracking-wide">If you have any other questions or queries, please do not hesitate to contact me. </span>
+                            <span class="relative pt-2 text-xl tracking-wide">If you have decided to work with me then, please do not hesitate to contact me. </span>
                         </div>
                         <div class="flex gap-x-4 items-center cursor-pointer my-4" 
                             onClick={() => openMail()}
@@ -111,16 +112,16 @@ function Contact() {
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label class="font-medium" for="message">Enter your message</label>
-                            <input value={message} onChange={(e) => setMessage(e.target.value)} multiligne
-                                class="px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32"
+                            <textarea  value={message} onChange={(e) => setMessage(e.target.value)}
+                                class="resize px-4 py-2 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32"
                                 type="texterea" placeholder="Enter your message" 
                             />
                         </div>
                         <button 
-                            class="my-6 w-52 text-white p-3 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:opacity-90" 
+                            class="my-6 w-52 text-white p-3 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:opacity-90 flex gap-x-3 items-center justify-center" 
                             onClick={(e) => handleSubmit(e)} disabled={isLoading}
                         >
-                            { isLoading && <i class="fa fa-spinner fa-spin"></i> }
+                            { isLoading && <img alt="" src={spin} class="w-3 h-3 animate-spin" /> }
                             Send
                         </button>
                     </div>

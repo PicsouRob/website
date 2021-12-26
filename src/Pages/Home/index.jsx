@@ -5,17 +5,9 @@ import Header from '../../Components/Header';
 import img from '../../Images/picsou.jpg';
 import pic from '../../Images/picsou.png';
 import svg1 from '../../Images/blob-haikei(2).svg';
-// import design from '../../Images/Mediamodifier-Design.svg';
-// import img2 from '../../Images/image.svg';
-// import circle from '../../Images/circle-scatter-haikei.svg';
+import { openMail } from '../../Utils/data';
 
 function Home() {
-    // const { width } = useWidth();
-
-    const openMail = () => {
-        window.open('mailto:www.phanordpicsouroberto11@gmail.com?subject=Services&body=Salut Roberto');
-    }
-
     return (
         <div id="home" class="relative min-h-screen px-8 mx-auto max-w-7xl">
             <Header />
