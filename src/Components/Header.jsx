@@ -1,19 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
 import logo from '../Images/Group 1.png';
+// import logo2 from '../Images/Picsou.svg';
 import SocialMedia from './SocialMedia';
 
 function Header() {
     const [isShow, setIsShow] = useState(false);
+    const [showScroll, setShowScroll] = useState(false);
+
+    const checkScrollTop = useCallback(() => {
+            if (!showScroll && window.pageYOffset > 400) {
+                setShowScroll(true);
+            } else if (showScroll && window.pageYOffset <= 400) {
+                setShowScroll(false);
+            }
+    }, [showScroll]);
+
+    useEffect(() => {
+        window.addEventListener('scroll', checkScrollTop);
+
+        return () => {
+            window.removeEventListener('scroll', checkScrollTop);
+        }
+    }, [checkScrollTop]);
 
     const toggleIcon = () => {
         setIsShow(!isShow);
     }
 
     return (
-        <div class="py-6 max-w-7xl overflow-hidden">
+        <div class={`${showScroll ? "fixed w-full z-50 bg-[#080225]" : ""} py-6 overflow-hidden px-8 mx-auto max-w-7xl`}>
             <div class="flex items-center justify-between">
                 <Link $isFullLink
                     activeClass="active"

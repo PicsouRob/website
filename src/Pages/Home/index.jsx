@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 
 import SocialMedia from '../../Components/SocialMedia';
 import Header from '../../Components/Header';
@@ -8,29 +8,9 @@ import svg1 from '../../Images/blob-haikei(2).svg';
 import { openMail } from '../../Utils/data';
 
 function Home() {
-    const [showScroll, setShowScroll] = useState(false);
-
-    const checkScrollTop = useCallback(() => {
-            if (!showScroll && window.pageYOffset > 400) {
-                setShowScroll(true);
-            } else if (showScroll && window.pageYOffset <= 400) {
-                setShowScroll(false);
-            }
-    }, [showScroll]);
-
-    useEffect(() => {
-        window.addEventListener('scroll', checkScrollTop);
-
-        return () => {
-            window.removeEventListener('scroll', checkScrollTop);
-        }
-    }, [checkScrollTop]);
-
     return (
         <div id="home" class="relative min-h-screen overflow-hidden">
-            <div class={`${showScroll ? "fixed z-50 bg-[#080225]" : ""} w-full px-8 mx-auto max-w-7xl`}>
-                <Header />
-            </div>
+            <Header />
             <div class="px-8 mx-auto max-w-7xl">
                 <div class="relative py-16 mx-auto w-full">
                     <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
