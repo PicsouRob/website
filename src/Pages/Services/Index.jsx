@@ -4,7 +4,7 @@ import { data, openMail } from '../../Utils/data';
 
 function Service() {
     return (
-        <div id="services" class="relative bg-green-100">
+        <div id="services" class="relative bg-green-50 md:bg-green-100">
             <div class="px-8 max-w-7xl py-16 mx-auto">
                 <div class="mb-16 flex flex-col items-center justify-center">
                     <h3 class="text-[#880a0c] text-xl font-bold">
@@ -36,7 +36,7 @@ function Service() {
                             How can i help you?
                         </h1>
                         <p class="py-4 max-w-lg font-medium tracking-wide leading-loose">
-                            I will you with fingind a solution and solved you problems, I use process design to create digital products.Besids that also their Business. <br /> <br /> So if you need a website or a application for your business, don't hesitate to contact me. 
+                            I will you with fingind a solution and solved you problems, I use process design to create digital products.Besids that also their Business. <br /> <br /> So if you need a website or a application for your business, don't hesitate to contact me.
                         </p>
                         <button class="px-8 mt-3 md:px-8 py-4 font-semibold tracking-wide bg-[#880a0c] text-white rounded-lg shadow-md transition hover:opacity-90"
                             onClick={() => openMail()}
