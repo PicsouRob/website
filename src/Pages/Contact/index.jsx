@@ -100,20 +100,20 @@ function Contact() {
                             <label class="font-medium" for="mail">Enter your name</label>
                             <input value={name} 
                                 onChange={(e) => setName(e.target.value)} 
-                                class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c]"
+                                class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] shadow-lg"
                                 placeholder="Enter your name" type="text" 
                             />
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label class="font-medium" for="mail">Enter your mail</label>
                             <input value={email} onChange={(e) => setEmail(e.target.value)}
-                            class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c]"
+                            class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] shadow-lg"
                             placeholder="Enter your mail" type="text" />
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label class="font-medium" for="message">Enter your message</label>
                             <textarea  value={message} onChange={(e) => setMessage(e.target.value)}
-                                class="resize px-4 py-2 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32"
+                                class="resize px-4 py-2 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32 shadow-lg"
                                 type="texterea" placeholder="Enter your message" 
                             />
                         </div>
