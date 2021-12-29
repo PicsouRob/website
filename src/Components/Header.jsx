@@ -32,7 +32,7 @@ function Header() {
 
     return (
         <div class={`${showScroll ? "fixed bg-[#080225] w-full" : "bg-transparent"} w-full py-4 md:py-6 overflow-hidden px-8 mx-auto z-50`}>
-            <div class="max-w-7xl">
+            <div class="max-w-7xl mx-auto">
                 <div class="flex items-center justify-between">
                     <Link
                         activeClass="active"
@@ -109,7 +109,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div class={`${isShow ? "-translate-x-0" : "absolute right-0 left-0 translate-x-full"} h-2/5 bg-[#080225] py-8 z-40 mt-4 w-full transition transform ease-out duration-300 inline-block md:hidden overflow-hidden`}>
+            <div class={`${isShow ? "-translate-x-0" : "translate-x-full"} h-2/5 bg-[#080225] py-8 z-40 mt-4 w-full transition transform ease-out duration-300 inline-block md:hidden overflow-hidden`}>
                 <div class="grid grid-cols-1 divide-y text-center text-white text-xl font-medium">
                     <div class="cursor-pointer py-3">
                         <Link
