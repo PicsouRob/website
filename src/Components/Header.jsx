@@ -31,7 +31,7 @@ function Header() {
     }
 
     return (
-        <div class={`${showScroll ? "fixed bg-[#080225] w-full" : "bg-transparent"} py-4 md:py-6 overflow-hidden px-8 mx-auto z-50`}>
+        <div class={`${showScroll ? "fixed bg-[#080225] w-full" : "bg-transparent"} py-4 md:py-6 overflow-hidden z-50`}>
             <div class="mx-auto">
                 <div class="max-w-7xl px-8 mx-auto flex items-center justify-between">
                     <Link
