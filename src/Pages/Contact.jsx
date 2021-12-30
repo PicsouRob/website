@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
-import config from '../../config';
-import SocialMedia from '../../Components/SocialMedia';
-import HeaderText from '../../Components/HeaderText';
-import spin from '../../Images/spin.svg';
+import config from '../config';
+import SocialMedia from '../Components/SocialMedia';
+import HeaderText from '../Components/HeaderText';
+import spin from '../Images/spin.svg';
 
 function Contact() {
     emailjs.init(config.USER_ID);

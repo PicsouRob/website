@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HeaderText from '../../Components/HeaderText';
-import aboutPhoto from '../../Images/picsou.jpg';
+import HeaderText from '../Components/HeaderText';
+import aboutPhoto from '../Images/picsou.jpg';
 
 function About() {
     return (

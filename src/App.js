@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import Home from './Pages/Home';
-import bg1 from './Images/bg-1.svg';
+
 import About from "./Pages/About";
-import Service from "./Pages/Services/Index";
+import Service from "./Pages/Service";
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
+import bg1 from './Images/bg-1.svg';
 import animateIcon from './Images/circle.svg';
+import Home from "./Pages/Home";
 
 function App() {
     const [isLoad, setIsLoad] = useState(true);

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SocialMedia from '../../Components/SocialMedia';
-import Header from '../../Components/Header';
-import img from '../../Images/picsou.jpg';
-import pic from '../../Images/picsou.png';
-import svg1 from '../../Images/blob-haikei(2).svg';
-import { openMail } from '../../Utils/data';
+import SocialMedia from '../Components/SocialMedia';
+import Header from '../Components/Header';
+import img from '../Images/picsou.jpg';
+import pic from '../Images/picsou.png';
+import svg1 from '../Images/blob-haikei(2).svg';
+import { openMail } from '../Utils/data';
 
 function Home() {
     return (

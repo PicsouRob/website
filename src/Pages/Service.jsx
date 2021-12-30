@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { data, openMail } from '../../Utils/data';
+import { data, openMail } from '../Utils/data';
 
 function Service() {
     return (
