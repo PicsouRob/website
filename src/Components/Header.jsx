@@ -1,37 +1,17 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
-import SocialMedia from './SocialMedia';
 import img from '../Images/picsou.jpg';
 import logo from "../Images/logo2.png";
 
-function Header() {
-    const [isShow, setIsShow] = useState(false);
-    const [showScroll, setShowScroll] = useState(false);
-
-    const checkScrollTop = useCallback(() => {
-        if (!showScroll && window.pageYOffset > 400) {
-            setShowScroll(true);
-        } else if (showScroll && window.pageYOffset <= 400) {
-            setShowScroll(false);
-        }
-    }, [showScroll]);
-
-    useEffect(() => {
-        window.addEventListener('scroll', checkScrollTop);
-
-        return () => {
-            window.removeEventListener('scroll', checkScrollTop);
-        }
-    }, [checkScrollTop]);
-
+function Header({ isShow, setIsShow }) {
     const toggleIcon = () => {
         setIsShow(!isShow);
     }
 
     return (
-        <div class={`${showScroll ? "fixed w-full" : ""} py-2 overflow-hidden z-50 bg-white`}>
+        <div class="py-3 overflow-hidden z-60 bg-white relative">
             <div class="mx-auto">
                 <div class="max-w-7xl px-8 mx-auto flex items-center justify-between">
                     <Link
@@ -98,74 +78,18 @@ function Header() {
                     </button>
                     <div class="flex md:hidden" onClick={() => toggleIcon()}>
                         {!isShow ? (
-                            <FaBars color="#fff"
+                            <FaBars color="#01121b"
                                 size={20} style={{ cursor: "pointer" }}
                             />
                         ) : (
-                            <FaTimes color="#fff"
+                            <FaTimes color="#01121b"
                                 size={20} style={{ cursor: "pointer" }}
                             />
                         )}
                     </div>
                 </div>
             </div>
-            <div class={`${isShow ? "-translate-x-0" : "absolute right-0 translate-x-full"} h-2/5 bg-[#080225] py-8 z-40 mt-4 w-full transition transform ease-out duration-300 inline-block md:hidden overflow-hidden`}>
-                <div class="grid grid-cols-1 divide-y text-center text-white text-xl font-medium">
-                    <div class="cursor-pointer py-3">
-                        <Link
-                            activeClass="active"
-                            to="home"
-                            class=""
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            onClick={() => {
-                                toggleIcon();
-                            }}
-                        >Home</Link>
-                    </div>
-                    <div class="cursor-pointer py-3">
-                        <Link
-                            activeClass="active"
-                            to="about"
-                            class=""
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            onClick={() => toggleIcon()}
-                        >About Me</Link>
-                    </div>
-                    <div class="cursor-pointer py-3">
-                        <Link
-                            activeClass="active"
-                            to="services"
-                            spy={true}
-                            smooth={true}
-                            class=""
-                            offset={-70}
-                            duration={500}
-                            onClick={() => toggleIcon()}
-                        >Services</Link>
-                    </div>
-                    <div class="cursor-pointer py-3">
-                        <Link
-                            activeClass="active"
-                            to="contact"
-                            spy={true}
-                            class=""
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            onClick={() => toggleIcon()}
-                        >Contact</Link>
-                    </div>
-                </div>
-                <div class="mt-16 flex items-center justify-center">
-                    <SocialMedia color="grey" />
-                </div>
-            </div>
+            
         </div>
     )
 }

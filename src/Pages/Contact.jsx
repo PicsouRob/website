@@ -79,7 +79,7 @@ function Contact() {
                             <div class="w-9 h-9 md:w-12 md:h-12 rounded-full bg-[#880a0c] flex items-center justify-center">
                                 <FaEnvelope color="#fff" />
                             </div>
-                            <div class="break-all">
+                            <div class="break-all leading-5">
                                 <h4 class="font-bold">Address Mail</h4>
                                 <p class="font-medium break-all flex-wrap">www.phanordpicsouroberto11@gmail.com</p>
                             </div>
@@ -88,7 +88,7 @@ function Contact() {
                             <div class="w-9 h-9 md:w-12 md:h-12 rounded-full bg-[#880a0c] flex items-center justify-center">
                                 <FaPhoneAlt color="#fff" />
                             </div>
-                            <div class="">
+                            <div class="leading-5">
                                 <h4 class="font-bold">Phone Number</h4>
                                 <p class="font-medium">+1 809 4298594</p>
                             </div>
@@ -100,25 +100,25 @@ function Contact() {
                             <label class="font-medium" for="mail">Enter your name</label>
                             <input value={name} 
                                 onChange={(e) => setName(e.target.value)} 
-                                class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] shadow-lg"
+                                class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c]"
                                 placeholder="Enter your name" type="text" 
                             />
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label class="font-medium" for="mail">Enter your mail</label>
                             <input value={email} onChange={(e) => setEmail(e.target.value)}
-                            class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] shadow-lg"
+                            class="py-3 px-4 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c]"
                             placeholder="Enter your mail" type="text" />
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label class="font-medium" for="message">Enter your message</label>
                             <textarea  value={message} onChange={(e) => setMessage(e.target.value)}
-                                class="resize px-4 py-2 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32 shadow-lg"
+                                class="resize px-4 py-2 focus:outline-none font-light focus:ring-0 border-gray-400 rounded-lg border border-grayy-400 transition-all focus-within:border-[#880a0c] h-32"
                                 type="texterea" placeholder="Enter your message" 
                             />
                         </div>
                         <button 
-                            class="mt-6 w-52 text-white p-3 font-medium tracking-wide bg-[#880a0c] rounded-lg shadow-md transition hover:opacity-90 flex gap-x-3 items-center justify-center" 
+                            class="mt-4 w-52 text-white p-3 font-medium tracking-wide bg-[#880a0c] rounded-lg transition hover:opacity-90 flex gap-x-3 items-center justify-center" 
                             onClick={(e) => handleSubmit(e)} disabled={isLoading}
                         >
                             { isLoading && <img alt="" src={spin} class="w-3 h-3 animate-spin" /> }
